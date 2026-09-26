@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siem Reap Tuk-Tuk Driver ></title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    
+
+    <nav class="navbar">
+        <h2> CHAN VICHETH</h2>
+
+        <button class="menu-button">☰</button>
+
+        <div class="nav-links">
+            <a href="#home">Homme</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#places">Places</a>
+            <a href="#home">Contact</a>
+
+        </div>
+
+
+    </nav>
+
+    <section class="contact-section" id="home">
+
+        <h1> Explore Sieam Reap with a local
+            Tuk-Tuk Driver</h1>
+
+        <h2>Welcome to Siem Reap, Cambodia!</h2>
+        <p> Discover the temples, culture, and beautiful places of Siem Reap with a friendly local tuk-tuk driver.</p>
+
+        <h2> Contact Me</h2>
+        <p>
+            If you would like to travel around Siem Reap,
+            please contact me.
+        </p>
+       <div>
+         <a href="https://web.facebook.com/vicheth.cheth.3" class="contact-button">
+            Contact Me on Facebook
+        </a>
+
+        <a href="0974599653" class="phone-button">Call ME</a>
+
+       </div>
+       
+
+    </section>
+
+    <footer class="footer">
+
+        <h3>CHAN VICHETH</h3>
+
+        <p>Local Tuk-Tuk Driver in Siem Reap, Cambodia</p>
+
+        <p>© 2026 CHAN VICHETH. All rights reserved.</p>
+
+    </footer>
+
+    <section class="about" id="about">
+
+        <h2>Meet Your Local Driver</h2>
+
+                <div class="driver">
+            <img src="./image/moto.jpg" alt="Tuk Tuk driver in Siem Reab" width="200px" class="dri-photo">
+        </div>
+
+
+        <p>
+            Hello! My name is CHAN VICHETH.
+            I am a local tuk-tuk driver in Siem Reap, Cambodia.
+        </p>
+
+        <p>
+            I enjoy meeting visitors from different countries and helping them discover the beautiful places of Siem
+            Reap.
+        </p>
+
+        <p>
+            I can take you to Angkor Wat, other temples,
+            local markets, restaurants, and many beautiful places around Siem Reap.
+        </p>
+
+    </section>
+
+
+
+
+
+    <section class="Services" id="services">
+
+        <h2> My Services</h2>
+
+        <div class="service-container">
+
+            <div class="service">
+                <h3>Tuk-Tuk Transportation</h3>
+                <div class="service-images">
+                    <img src="./image/tuk-tuk.jpg" alt="">
+                    <img src="./image/girl_tran.jpg" alt="">
+
+                </div>
+                <p> Comfortable transportation around Siem Reap
+                    and nearby places.</p>
+            </div>
+
+            <div class="service">
+                <h3>Angkor Wat Tours</h3>
+                <div class="service-images">
+                    <img src="./image/angtur.jpg" alt="">
+                    <img src="./image/angturnew.jpg" alt="">
+
+                </div>
+                <p> Visit Angkor Wat and other beautiful temples
+                    around Siem Reab.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Airport Transfer</h3>
+                <div class="service-images">
+                    <img src="./image/airnew.jpg" alt="">
+                    <img src="./image/motobike.jpg" alt="">
+
+                </div>
+                <p> Pick-up and drop-off between airport and your hotel.</p>
+            </div>
+
+            <div class="service">
+                <h3>Hotel Pickup</h3>
+                <div class="service-images">
+                    <img src="./image/hotel.jpg" alt="">
+                    <img src="./image/pickup.jpg" alt="">
+
+                </div>
+                <p>Convenient pickup from your hotel
+                    for your trip around Siem Reap.
+                </p>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <section class="places" id="places">
+
+        <h2>
+            Popular Places in Siem Reap.
+        </h2>
+
+        <div class="place-container">
+
+            <div class="place">
+                <h3> Angkor Wat </h3>
+
+                <div class="place-images">
+                    <img src="./image/Angkorwat.jpg" alt="Angkorwat in Siem Reap">
+                    <img src="./image/ang.jpg" alt="">
+
+                </div>
+
+                <p> Visit one of Cambodia's most famous temples
+                    and discover its amazing architecture.</p>
+            </div>
+
+            <div class="place">
+                <h3> Ta Prohm</h3>
+
+                <div class="place-images">
+                    <img src="./image/TaProhm.jpg" alt="TaProhm temple in Siem Reap">
+                    <img src="./image/ta.jpg" alt="">
+
+                </div>
+
+                <p>
+                    Explore the famous temple surrounded by
+                    trees and nature.
+                </p>
+            </div>
+
+            <div class="place">
+                <h3> Pub Street</h3>
+                <div class="place-images">
+                    <img src="./image/pop.jpg" alt="PopSreet in Siem Reap">
+                    <img src="./image/PopStreet.jpg" alt="">
+                </div>
+
+                <p> Enjoy the lively atmosphere, resturants,
+                    shops, and nightlife of Siem Reap.
+                </p>
+            </div>
+
+
+
+        </div>
+
+    </section>
+<script>
+    const menuButton = document.querySelector(".menu-button");
+    const navLinks = document.querySelector(".nav-links");
+    const links = document.querySelectorAll(".nav-links a");
+
+    menuButton.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+
+        if (navLinks.classList.contains("active")) {
+            menuButton.textContent = "✕";
+        } else {
+            menuButton.textContent = "☰";
+        }
+    });
+
+    links.forEach(function (link) {
+        link.addEventListener("click", function () {
+            navLinks.classList.remove("active");
+            menuButton.textContent = "☰";
+        });
+    });
+</script>
+
+</body>
+
+</html>

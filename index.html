@@ -10,7 +10,7 @@
 
 <body>
 
-    
+
 
     <nav class="navbar">
         <h2> CHAN VICHETH</h2>
@@ -42,15 +42,15 @@
             If you would like to travel around Siem Reap,
             please contact me.
         </p>
-       <div>
-         <a href="https://web.facebook.com/vicheth.cheth.3" class="contact-button">
-            Contact Me on Facebook
-        </a>
+        <div>
+            <a href="https://web.facebook.com/vicheth.cheth.3" class="contact-button">
+                Contact Me on Facebook
+            </a>
 
-        <a href="0974599653" class="phone-button">Call ME</a>
+            <a href="0974599653" class="phone-button">Call ME</a>
 
-       </div>
-       
+        </div>
+
 
     </section>
 
@@ -68,7 +68,7 @@
 
         <h2>Meet Your Local Driver</h2>
 
-                <div class="driver">
+        <div class="driver">
             <img src="./image/moto.jpg" alt="Tuk Tuk driver in Siem Reab" width="200px" class="dri-photo">
         </div>
 
@@ -204,28 +204,28 @@
         </div>
 
     </section>
-<script>
-    const menuButton = document.querySelector(".menu-button");
-    const navLinks = document.querySelector(".nav-links");
-    const links = document.querySelectorAll(".nav-links a");
+    <script>
+        const menuButton = document.querySelector(".menu-button");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links a");
 
-    menuButton.addEventListener("click", function () {
-        navLinks.classList.toggle("active");
+        menuButton.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
 
-        if (navLinks.classList.contains("active")) {
-            menuButton.textContent = "✕";
-        } else {
-            menuButton.textContent = "☰";
-        }
-    });
-
-    links.forEach(function (link) {
-        link.addEventListener("click", function () {
-            navLinks.classList.remove("active");
-            menuButton.textContent = "☰";
+            if (navLinks.classList.contains("active")) {
+                menuButton.textContent = "✕";
+            } else {
+                menuButton.textContent = "☰";
+            }
         });
-    });
-</script>
+
+        links.forEach(function (link) {
+            link.addEventListener("click", function () {
+                navLinks.classList.remove("active");
+                menuButton.textContent = "☰";
+            });
+        });
+    </script>
 
 </body>
 

@@ -3,7 +3,7 @@
 html,body{
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #eef3e8;
     overflow-x: hidden;
 
 }
@@ -622,10 +622,7 @@ html {
     .section-title {
         font-size: 28px;
     }
-    #site{
-        height: 300px;
-        width: 450px;
-    }
+    
 
 
 }
@@ -686,12 +683,13 @@ html {
     .place img,
     #site {
         width: 100%;
-        max-width: 100%;
-        height: auto !important;
+        max-width:400px;
+        height: auto ;
         display: block;
-        object-fit: contain !important;
-        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
+    
 
     .h-three {
         font-size: 20px;
@@ -715,4 +713,24 @@ html {
         line-height: 1.7;
         text-align: left;
     }
+}
+.place {
+    background-color: white;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.site {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-sizing: border-box;
 }

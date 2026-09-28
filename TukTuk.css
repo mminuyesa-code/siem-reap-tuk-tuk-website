@@ -118,7 +118,7 @@ h1{
 }
 .place{
     background-color: white;
-    max-width: 1400px;
+    max-width: 500px;
     margin: 20px auto;
     padding: 25px;
     border-radius: 12px;
@@ -656,4 +656,63 @@ html {
     font-size: 26px;
     margin-bottom: 10px;
     color: #1f6f8b;
+}
+/* =========================
+   PLACES - PHONE
+========================= */
+
+@media (max-width: 600px) {
+
+    pleaces {
+        width: 100%;
+        padding: 30px 15px;
+        box-sizing: border-box;
+    }
+
+    .place-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .place {
+        width: 100%;
+        height: auto !important;
+        box-sizing: border-box;
+        overflow: visible !important;
+    }
+
+    .place img,
+    #site {
+        width: 100%;
+        max-width: 100%;
+        height: auto !important;
+        display: block;
+        object-fit: contain !important;
+        border-radius: 10px;
+    }
+
+    .h-three {
+        font-size: 20px;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .more-button {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .more-text,
+    #more-text {
+        display: none;
+        width: 100%;
+        height: auto !important;
+        overflow: visible !important;
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.7;
+        text-align: left;
+    }
 }
